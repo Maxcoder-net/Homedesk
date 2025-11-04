@@ -13,6 +13,7 @@ public interface Orderservice {
 	
 	public List<Order> getallorders();
 	
+	
 	public void cancelorder(long id);
 	
 
@@ -21,6 +22,9 @@ public interface Orderservice {
 	public Order updateorder(Order order, String stas, int id);
 
 	Order updateorder(Order ord, String status, Integer id);
+
+
+	Order getorder(Order ordr, int id);
 	
 		
 

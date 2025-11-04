@@ -87,7 +87,23 @@ public class Orderserviceimpl implements Orderservice {
 	public Order updateorder(Order ord, String status, Integer id) {
 		// TODO Auto-generated method stub
 		return null;
-	}}
+	}
+
+
+
+	@Override
+	public Order getorder(Order ordr, int id) {
+		// TODO Auto-generated method stub
+		Optional<Order> optinaluser = orderepos.findById(id);
+		if(optinaluser.isPresent())
+		{
+			Order ordr1 = optinaluser.get();
+			
+		
+	}
+		return ordr;
+		}
+}
 	
 
 
