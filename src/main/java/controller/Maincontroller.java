@@ -54,6 +54,15 @@ public class Maincontroller {
 	}
 	
 	
+	@GetMapping("/getone")
+	public ResponseEntity<Order> getbyid(@PathVariable int id) {
+				
+		return new ResponseEntity<Order>(orderepo.getorder(null, id),HttpStatus.OK);
+		
+				
+	}
+	
+	
 		
 	@SuppressWarnings("rawtypes")
 	@PutMapping("/editorder/{id}")
